@@ -53,18 +53,45 @@
 
 <main class="container mx-auto flex max-w-6xl">
     <div class="max-w-xs mr-8">
-        Add Idea Form
+        Add Idea FormAdd Idea FormAdd Idea FormAdd Idea FormAdd Idea FormAdd Idea FormAdd Idea Form
     </div>
-    <div>
+    <div class="max-w-full w-8/12">
         <nav class="flex items-center justify-between text-xs">
-            <ul class="flex uppercase font-semibold space-x-10">
+            <ul class="flex uppercase font-semibold space-x-10 border-b-4 pb-3">
                 <li>
-                    <a href="#" class="">
+                    <a href="#" class="border-b-4 pb-3 border-blue">
                         All ideas (87)
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">
+                        Considering (6)
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">
+                        In Progress (1)
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="flex uppercase font-semibold space-x-10 border-b-4 pb-3">
+                <li>
+                    <a href="#" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">
+                        Implemented (10)
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-400 transition duration-150 ease-in border-b-4 pb-3 hover:border-blue">
+                        Closed (55)
                     </a>
                 </li>
             </ul>
         </nav>
+
+        <div class="mt-8">
+            {{ $slot }}
+        </div>
     </div>
 </main>
 </body>
